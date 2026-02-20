@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <title>Da-Kong Education — Precision Manufacturing for Craft & Learning Kits</title>
+    <meta
+      name="description"
+      content="Da-Kong Education builds high-quality educational and craft kits with 15+ years of GMP-certified manufacturing, FSC materials, and client-centric collaboration."
+    />
+    <meta
+      name="keywords"
+      content="Da-Kong, educational kits, custom manufacturing, GMP, FSC, assembly, packaging"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a1f44" />
+    <meta property="og:title" content="Da-Kong Education — Precision Manufacturing" />
+    <meta
+      property="og:description"
+      content="A modern, responsive showcase for Da-Kong Education's custom educational kit manufacturing, sustainability, and process excellence."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' fill='%230a1f44' /><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='12' fill='%23ffffff' font-family='Arial'>DK</text></svg>" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: '#0a1f44',
+              'navy-dark': '#04132b',
+              'da-kong-green': '#3ebd7e'
+            },
+            fontFamily: {
+              sans: ['Inter', 'Manrope', 'system-ui']
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', 'Manrope', system-ui, sans-serif;
+        background: #f9fafb;
+        color: #0f172a;
+      }
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+      }
+      .fade-in-section.visible {
+        opacity: 1;
+        transform: none;
+      }
+      .placeholder-shape {
+        border-radius: 1.5rem;
+        background: linear-gradient(130deg, rgba(62, 189, 126, 0.35), rgba(10, 31, 68, 0.55));
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .placeholder-shape svg {
+        width: 64px;
+        height: 64px;
+        opacity: 0.6;
+      }
+      .fade-in-image {
+        animation: pulse 4s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 0.9;
+        }
+        50% {
+          transform: scale(1.02);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0.9;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-zinc-50 text-slate-900">
+    <div class="min-h-screen bg-gradient-to-b from-white via-slate-50 to-slate-100">
+      <header class="relative z-50">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 lg:px-0" aria-label="Primary">
+          <a class="text-xl font-bold tracking-tight text-navy" href="#hero">
+            <span class="text-da-kong-green">Da-Kong</span> Education
+          </a>
+          <div class="hidden items-center space-x-8 text-sm font-medium md:flex">
+            <a class="transition hover:text-da-kong-green" href="#about">Why Da-Kong</a>
+            <a class="transition hover:text-da-kong-green" href="#services">Services</a>
+            <a class="transition hover:text-da-kong-green" href="#sustainability">Sustainability</a>
+            <a class="transition hover:text-da-kong-green" href="#process">Process</a>
+            <a class="transition hover:text-da-kong-green" href="#contact">Contact</a>
+          </div>
+          <a
+            class="hidden rounded-full bg-da-kong-green px-5 py-2 text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-emerald-500 md:inline-flex"
+            href="#contact"
+            >Request a Quote</a
+          >
+          <button
+            class="md:hidden"
+            id="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span class="block w-6 h-0.5 mb-1 bg-slate-900"></span>
+            <span class="block w-6 h-0.5 mb-1 bg-slate-900"></span>
+            <span class="block w-6 h-0.5 bg-slate-900"></span>
+          </button>
+        </nav>
+        <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white md:hidden">
+          <div class="flex flex-col space-y-2 px-4 py-4">
+            <a class="text-slate-800" href="#about">Why Da-Kong</a>
+            <a class="text-slate-800" href="#services">Services</a>
+            <a class="text-slate-800" href="#sustainability">Sustainability</a>
+            <a class="text-slate-800" href="#process">Process</a>
+            <a class="text-slate-800" href="#contact">Contact</a>
+            <a class="rounded-full bg-da-kong-green px-4 py-2 text-center text-sm font-semibold text-white" href="#contact">Request a Quote</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="mx-auto flex w-full max-w-6xl flex-col gap-16 px-4 pb-24 pt-12 md:px-0">
+        <section id="hero" class="fade-in-section rounded-3xl bg-gradient-to-br from-navy to-navy-dark p-10 text-white shadow-2xl lg:p-16">
+          <div class="grid gap-10 lg:grid-cols-[1fr,1fr] lg:items-center">
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-slate-300">Client-centric manufacturing</p>
+              <h1 class="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">
+                Precision-crafted education and craft kits built with GMP, sustainability, and a factory team that feels like an extension of yours.
+              </h1>
+              <p class="mt-6 max-w-2xl text-lg text-slate-200">
+                Da-Kong Education has spent 15+ years perfecting custom production for educators, museums, and learning brands. Our 60,000 sqft facility is split between packaging and assembly lines, giving us the agility to deliver reliable runs from prototype to delivery.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a
+                  class="rounded-full bg-da-kong-green px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white shadow-lg shadow-da-kong-green/40 transition hover:bg-emerald-500"
+                  href="#contact"
+                  >Request a Quote</a
+                >
+                <a
+                  class="rounded-full border border-white/40 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition hover:border-white"
+                  href="#services"
+                  >Explore Services</a
+                >
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="placeholder-shape fade-in-image">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="120" height="120" rx="24" fill="white" />
+                  <path d="M20 80L60 30L100 80" stroke="#0a1f44" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="60" cy="70" r="12" fill="#3ebd7e" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="fade-in-section rounded-3xl bg-white/80 px-6 py-10 shadow-lg shadow-slate-200 backdrop-blur lg:px-10">
+          <div class="grid gap-10 lg:grid-cols-[1fr,0.9fr]">
+            <div class="space-y-4">
+              <p class="text-sm uppercase tracking-[0.5em] text-slate-500">About / Why Da-Kong</p>
+              <h2 class="text-3xl font-semibold text-navy">Rooted in manufacturing discipline, built for education</h2>
+              <p class="text-base text-slate-600">
+                Da-Kong Education started as a logistics partner and quickly became a trusted creative manufacturing ally. Our GMP-certified lines, rigorous QA, and deep understanding of educational brands keep every run on time and on brief.
+              </p>
+              <div class="flex flex-wrap gap-6 pt-4 text-sm font-semibold text-slate-700">
+                <div>
+                  <p class="text-2xl text-navy">15+</p>
+                  <p>Years delivering learning experiences</p>
+                </div>
+                <div>
+                  <p class="text-2xl text-navy">60k sqft</p>
+                  <p>Factory & packaging space</p>
+                </div>
+                <div>
+                  <p class="text-2xl text-navy">GMP</p>
+                  <p>Quality controls you can audit</p>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-100 p-6">
+                <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Client promise</p>
+                <p class="mt-3 text-lg font-semibold text-slate-800">
+                  "You feel the Da-Kong team in the room. We start with your learning goals, then translate them into reliable, scalable production plans."
+                </p>
+                <p class="mt-4 text-sm text-slate-500">
+                  — Eliot Cargile, Program Director, Da-Kong Education
+                </p>
+              </div>
+              <div class="placeholder-shape">
+                <span class="text-sm text-white">Factory overview placeholder</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="fade-in-section">
+          <div class="rounded-3xl bg-white px-6 py-10 shadow-xl shadow-slate-200 lg:px-10">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm uppercase tracking-[0.4em] text-slate-500">Services</p>
+                <h2 class="text-3xl font-semibold text-navy">From napkin sketches to boxed kits</h2>
+                <p class="mt-2 text-slate-600">
+                  Our cross-functional team blends product development, supply chain, and creative production so your educational brand launches feeling effortless and premium.
+                </p>
+              </div>
+              <div class="hidden text-sm capitalize text-slate-500 md:block">Live feed from our floor: 6 kits rolling every 12 minutes.</div>
+            </div>
+            <div class="mt-8 grid gap-6 md:grid-cols-2">
+              <article class="rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-da-kong-green/70">
+                <h3 class="text-xl font-semibold text-navy">Product Development</h3>
+                <p class="mt-3 text-sm text-slate-600">
+                  CAD, prototyping, and testing with educators in mind. We fast-track proof-of-concepts in weeks, not months.
+                </p>
+              </article>
+              <article class="rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-da-kong-green/70">
+                <h3 class="text-xl font-semibold text-navy">Custom Kits</h3>
+                <p class="mt-3 text-sm text-slate-600">
+                  Learning kits, STEAM packs, or branded craft experiences—assembled with GMP, packaged with care, and drop-shipped globally.
+                </p>
+              </article>
+              <article class="rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-da-kong-green/70">
+                <h3 class="text-xl font-semibold text-navy">Brand Collaboration</h3>
+                <p class="mt-3 text-sm text-slate-600">
+                  We partner with educators, museums, and retailers to bring their curriculum to life with consistent quality and flexibility.
+                </p>
+              </article>
+              <article class="rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-da-kong-green/70">
+                <h3 class="text-xl font-semibold text-navy">Packaging & Distribution</h3>
+                <p class="mt-3 text-sm text-slate-600">
+                  Controlled inventory, FSC-certified packaging, and final-mile logistics—so you can track every kit until it lands in classrooms.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="sustainability" class="fade-in-section rounded-3xl bg-gradient-to-br from-white to-slate-50 px-6 py-10 shadow-xl shadow-slate-200 lg:px-10">
+          <div class="grid gap-8 lg:grid-cols-[1fr,1.1fr]">
+            <div>
+              <p class="text-sm uppercase tracking-[0.4em] text-slate-500">Sustainability</p>
+              <h2 class="mt-2 text-3xl font-semibold text-navy">FSC-certified materials and smarter plastics alternatives</h2>
+              <p class="mt-3 text-slate-600">
+                We obsess over material sourcing. Our FSC chain of custody means every booklet, board, and sleeve is certified, while our team engineers plastic alternatives that retain durability without the landfill risk.
+              </p>
+            </div>
+            <div class="grid gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+              <div class="flex items-center space-x-3">
+                <div class="h-3 w-3 rounded-full bg-da-kong-green"></div>
+                <p class="text-sm font-semibold text-slate-700">FSC-certified paper, cartons, and sleeves</p>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="h-3 w-3 rounded-full bg-da-kong-green"></div>
+                <p class="text-sm font-semibold text-slate-700">Biodegradable additives replace single-use plastic</p>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div class="h-3 w-3 rounded-full bg-da-kong-green"></div>
+                <p class="text-sm font-semibold text-slate-700">Closed-loop waste programs keep factory floors clean</p>
+              </div>
+              <div class="placeholder-shape bg-slate-900/90 text-sm font-semibold text-white">
+                Sustainability visualization
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fade-in-section">
+          <div class="rounded-3xl bg-white px-6 py-10 shadow-xl shadow-slate-200 lg:px-10">
+            <div class="grid gap-10 lg:grid-cols-[1fr,0.8fr]">
+              <div>
+                <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Process</p>
+                <h2 class="text-3xl font-semibold text-navy">How we bring concepts into classrooms</h2>
+                <p class="mt-2 text-slate-600">
+                  A transparent, collaborative workflow keeps every project on schedule: you stay informed, our engineers stay precise, and your audience stays inspired.
+                </p>
+              </div>
+              <div class="grid items-center gap-3 text-sm text-slate-600">
+                <div class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-5 py-3">
+                  <span>Concept</span>
+                  <span>Workshop + briefs</span>
+                </div>
+                <div class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-5 py-3">
+                  <span>Design</span>
+                  <span>CAD + tooling</span>
+                </div>
+                <div class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-5 py-3">
+                  <span>Prototype</span>
+                  <span>Sample approval</span>
+                </div>
+                <div class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-5 py-3">
+                  <span>Production</span>
+                  <span>GMP-controlled lines</span>
+                </div>
+                <div class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-5 py-3">
+                  <span>Delivery</span>
+                  <span>Warehousing + logistics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fade-in-section rounded-3xl bg-white px-6 py-10 shadow-xl shadow-slate-200 lg:px-10">
+          <div class="space-y-8">
+            <div>
+              <p class="text-sm uppercase tracking-[0.5em] text-slate-500">Testimonials</p>
+              <h2 class="text-3xl font-semibold text-navy">Partners who trust the Da-Kong promise</h2>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3">
+              <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+                <h3 class="text-lg font-semibold text-navy">Museum Exhibit Labs</h3>
+                <p class="mt-2 text-sm text-slate-600">
+                  "Da-Kong translated our exhibit brief into perfect hands-on kits with zero rework. We now ship new drops twice a year."
+                </p>
+              </article>
+              <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+                <h3 class="text-lg font-semibold text-navy">STEM Learning Co.</h3>
+                <p class="mt-2 text-sm text-slate-600">
+                  "Their GMP floors make audit prep easy. Quality is consistent, and their team knows pacing for education timelines."
+                </p>
+              </article>
+              <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+                <h3 class="text-lg font-semibold text-navy">Creative Classroom</h3>
+                <p class="mt-2 text-sm text-slate-600">
+                  "From brand collab to packaging, Da-Kong kept us updated, offered eco alternatives, and delivered before the season started."
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="fade-in-section rounded-3xl bg-white px-6 py-10 shadow-xl shadow-slate-200 lg:px-10">
+          <div class="space-y-8">
+            <div>
+              <p class="text-sm uppercase tracking-[0.4em] text-slate-500">Partners</p>
+              <h2 class="text-3xl font-semibold text-navy">Trusted across industries</h2>
+            </div>
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+              <div class="rounded-2xl border border-slate-200 p-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Learning Lab
+              </div>
+              <div class="rounded-2xl border border-slate-200 p-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                STEAM Works
+              </div>
+              <div class="rounded-2xl border border-slate-200 p-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Creative Makers
+              </div>
+              <div class="rounded-2xl border border-slate-200 p-4 text-center text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                EduCargo
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="fade-in-section rounded-3xl bg-gradient-to-br from-navy to-navy-dark px-6 py-10 text-white shadow-2xl shadow-navy/30 lg:px-10">
+          <div class="grid gap-10 lg:grid-cols-[1.1fr,0.9fr]">
+            <div>
+              <p class="text-sm uppercase tracking-[0.4em] text-slate-200">Contact</p>
+              <h2 class="mt-2 text-3xl font-semibold text-white">Let’s talk about your next production run</h2>
+              <p class="mt-3 text-slate-200">
+                Tell us about your curriculum, quantities, timeline, and sustainability targets. We respond within one business day. Reach Eliot at <a class="font-semibold text-da-kong-green" href="mailto:eliotcargile@gmail.com">eliotcargile@gmail.com</a> or Miles at <a class="font-semibold text-da-kong-green" href="mailto:milesleach@da-kong.com">milesleach@da-kong.com</a>.
+              </p>
+            </div>
+            <form class="space-y-4">
+              <label class="block text-sm font-semibold uppercase tracking-[0.3em] text-slate-200">Name</label>
+              <input
+                class="w-full rounded-2xl border border-slate-200/80 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-300 focus:border-da-kong-green focus:outline-none"
+                placeholder="Your name"
+                required
+              />
+              <label class="block text-sm font-semibold uppercase tracking-[0.3em] text-slate-200">Email</label>
+              <input
+                class="w-full rounded-2xl border border-slate-200/80 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-300 focus:border-da-kong-green focus:outline-none"
+                placeholder="you@company.com"
+                type="email"
+                required
+              />
+              <label class="block text-sm font-semibold uppercase tracking-[0.3em] text-slate-200">Company</label>
+              <input
+                class="w-full rounded-2xl border border-slate-200/80 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-300 focus:border-da-kong-green focus:outline-none"
+                placeholder="Brand or school"
+              />
+              <label class="block text-sm font-semibold uppercase tracking-[0.3em] text-slate-200">Message</label>
+              <textarea
+                class="w-full rounded-2xl border border-slate-200/80 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-300 focus:border-da-kong-green focus:outline-none"
+                rows="4"
+                placeholder="Tell us about your project"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full rounded-2xl bg-da-kong-green px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition hover:bg-emerald-500"
+              >
+                Let’s Talk
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-slate-200 bg-white py-8">
+        <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
+          <p>© 2026 Da-Kong Education — Precision manufacturing for educational brands.</p>
+          <div class="flex items-center gap-3">
+            <a class="text-slate-600 transition hover:text-da-kong-green" href="#">LinkedIn</a>
+            <a class="text-slate-600 transition hover:text-da-kong-green" href="#">Instagram</a>
+            <a class="text-slate-600 transition hover:text-da-kong-green" href="#">YouTube</a>
+          </div>
+          <p class="text-xs text-slate-500">Designed by Simon Heikkila</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuToggle.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('hidden');
+        menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      });
+
+      const observers = document.querySelectorAll('.fade-in-section');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      observers.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
